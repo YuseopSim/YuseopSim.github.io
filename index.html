@@ -1,195 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yuseop Sim</title>
-  <link rel="shortcut icon" href="images/icons/favicon.ico" sizes="16x16" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Asap', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-    }
-    #intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 40px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-#intro-photo {
-  flex: 1 1 200px;
-  max-width: 200px;
-  margin-right: 40px;
-}
-
-#intro-photo img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-#intro-text {
-  flex: 2 1 400px;
-  max-width: 600px;
-}
-
-#intro-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-#intro-text p {
-  font-size: 1.1em;
-  line-height: 1.6em;
-  color: #333;
-}
-
-.social-links {
-  margin: 15px 0;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-
-.social-links a:hover {
-  background-color: #0056b3;
-}
-
-
-    #navbar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: white;
-      z-index: 1000;
-      padding: 10px 20px;
-      border-bottom-left-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    #navbar ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      gap: 15px;
-    }
-    #navbar li {
-      display: inline;
-    }
-    #navbar a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-    }
-    #navbar a:hover {
-      color: #007bff;
-    }
-    .grid {
-      margin-top: 60px;
-      padding: 20px;
-    }
-  </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="research">Research</a></li>
+      <li><a href="#" data-section="teaching">Teaching</a></li>
+      <li><a href="#" data-section="project">Project</a></li>
+      <li><a href="#" data-section="publication">Publication</a></li>
+    </ul>
+  </nav>
 
-<!-- Navigation -->
-<nav id="navbar">
-  <ul>
-    <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
-    <li><a href="javascript:void(0)" onclick="showSection('.research')">Research</a></li>
-    <li><a href="javascript:void(0)" onclick="showSection('.teaching')">Teaching</a></li>
-    <li><a href="javascript:void(0)" onclick="showSection('.project')">Project</a></li>
-    <li><a href="javascript:void(0)" onclick="showSection('.publication')">Publication</a></li>
-  </ul>
-</nav>
+  <!-- Content Container -->
+  <div id="content"></div>
 
-<!-- Content Grid -->
-<div class="grid">
-
-  <!-- Home Section -->
-  <div class="list-item home" data-category="home">
-  <div id="intro">
-    <div id="intro-photo">
-      <img src="images/headshots/headshot.png" alt="Yuseop Sim Headshot">
-    </div>
-    <div id="intro-text">
-      <h1>Yuseop Sim</h1>
-      <p>Ph.D. Student, Mechanical Engineering<br>Purdue University</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/yuseopsim" target="_blank">LinkedIn</a>
-        <a href="documents/CV_YuseopSim.pdf" target="_blank">CV</a>
-        <a href="https://www.researchgate.net/profile/Yuseop-Sim" target="_blank">ResearchGate</a>
-        <a href="https://orcid.org/0000-0001-8735-8803" target="_blank">ORCID</a>
-      </div>
-      <p>I am a Ph.D. student in Mechanical Engineering at Purdue University, focusing on robotics and AI for smart manufacturing. My research includes collaborative projects on sound-based machine monitoring, mobile robot autonomy, and physics-informed machine learning. I have contributed to digital twin development, reinforcement learning for mobile platforms, and intelligent sensing systems for real-world industrial applications.</p>
-      <p><a href="mailto:sim46@purdue.edu">sim46@purdue.edu</a></p>
-    </div>
-  </div>
-</div>
-
-
-  <!-- Other sections like publication, education, experience, cv go here -->
-  <div class="list-item research" data-category="research">
-    <h2>Sample Research</h2>
-    <p>Description of a research project.</p>
-  </div>
-  <div class="list-item education" data-category="teaching">
-    <h2>Ph.D. in Mechanical Engineering</h2>
-    <p>Purdue University</p>
-  </div>
-  <div class="list-item project" data-category="project">
-    <h2>Research</h2>
-  </div>
-  <div class="list-item publication" data-category="publication">
-    <h2>Research</h2>
-  </div>
-
-</div>
-
-<script>
-  var $grid = $('.grid').isotope({
-    itemSelector: '.list-item',
-    layoutMode: 'fitRows',
-    transitionDuration: 0
-  });
-
-  imagesLoaded('.grid', function () {
-    $grid.isotope('layout');
-    showSection('home');
-  });
-
-  function showSection(filterClass) {
-    if (filterClass === 'home') {
-      $grid.isotope({ filter: '.home' });
-    } else {
-      $grid.isotope({ filter: filterClass });
-    }
-  }
-</script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
