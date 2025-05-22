@@ -17,36 +17,64 @@
       background-color: #f8f9fa;
     }
     #intro {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-      padding: 40px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-    }
-    #intro-text {
-      max-width: 800px;
-    }
-    #intro-text h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    #intro-text p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      color: #333;
-    }
-    #intro-text a {
-      font-weight: bold;
-      color: #007bff;
-    }
-    .grid {
-      margin-top: 80px;
-      padding: 40px 20px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+#intro-photo {
+  flex: 1 1 200px;
+  max-width: 200px;
+  margin-right: 40px;
+}
+
+#intro-photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#intro-text {
+  flex: 2 1 400px;
+  max-width: 600px;
+}
+
+#intro-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#intro-text p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #333;
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.social-links a:hover {
+  background-color: #0056b3;
+}
+
 
     #navbar {
       position: fixed;
@@ -105,14 +133,25 @@
 
   <!-- Home Section -->
   <div class="list-item home" data-category="home">
-    <div id="intro">
-      <div id="intro-text">
-        <h1>Yuseop Sim</h1>
-        <p>I am a Ph.D. student in Mechanical Engineering at Purdue University, where I focus on robotics and AI for smart manufacturing. My research includes collaborative projects on sound-based machine monitoring, mobile robot autonomy, and physics-informed machine learning. I have contributed to digital twin development, reinforcement learning for mobile platforms, and intelligent sensing systems for real-world industrial applications.</p>
-        <a href="mailto:sim46@purdue.edu">sim46@purdue.edu</a>
+  <div id="intro">
+    <div id="intro-photo">
+      <img src="images/headshots/headshot.png" alt="Yuseop Sim Headshot">
+    </div>
+    <div id="intro-text">
+      <h1>Yuseop Sim</h1>
+      <p>Ph.D. Student, Mechanical Engineering<br>Purdue University</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/yuseopsim" target="_blank">LinkedIn</a>
+        <a href="documents/CV_YuseopSim.pdf" target="_blank">CV</a>
+        <a href="https://www.researchgate.net/profile/Yuseop_Sim" target="_blank">ResearchGate</a>
+        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a>
       </div>
+      <p>I am a Ph.D. student in Mechanical Engineering at Purdue University, focusing on robotics and AI for smart manufacturing. My research includes collaborative projects on sound-based machine monitoring, mobile robot autonomy, and physics-informed machine learning. I have contributed to digital twin development, reinforcement learning for mobile platforms, and intelligent sensing systems for real-world industrial applications.</p>
+      <p><a href="mailto:sim46@purdue.edu">sim46@purdue.edu</a></p>
     </div>
   </div>
+</div>
+
 
   <!-- Other sections like publication, education, experience, cv go here -->
   <div class="list-item research" data-category="research">
