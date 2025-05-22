@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research – Yuseop Sim</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Asap', sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-    }
-    .research-section {
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .research-section h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .paper-entry {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-    .paper-image img {
-      width: 120px;
-      height: auto;
-      border-radius: 4px;
-    }
-    .paper-info h3 {
-      margin: 0;
-      font-size: 1.1em;
-      color: #333;
-    }
-    .paper-info .authors {
-      font-size: 0.95em;
-      color: #555;
-    }
-    .paper-info .journal {
-      font-size: 0.9em;
-      color: #777;
-      font-style: italic;
-    }
-    .paper-links a {
-      margin-right: 10px;
-      font-size: 0.9em;
-      color: #007bff;
-      text-decoration: none;
-    }
-    .paper-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research – Yuseop Sim</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .paper-entry {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            min-height: 140px;
+        }
+
+        .paper-image {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+        }
+
+        .paper-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .paper-info {
+            flex: 1;
+        }
+
+        .paper-info h3 {
+            margin: 0 0 5px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .paper-info .authors {
+            font-size: 0.95em;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .paper-info .journal {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .paper-links a {
+            font-size: 0.9em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .paper-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="research-section">
-    <h1>Researches</h1>
+    <div class="research-section">
+        <h1>Researches</h1>
 
-    <div class="paper-entry">
-      <div class="paper-image">
-        <img src="images/publications/zero_shot_robot.png" alt="Zero-shot Robot Manipulation" />
-      </div>
-      <div class="paper-info">
-        <h3>Zero-shot autonomous robot manipulation via natural language</h3>
-        <p class="authors">Changheon Han, Hojun Lee, <strong>Yuseop Sim</strong>, Jiho Lee</p>
-        <p class="journal"><em>Manufacturing Letters</em>, September 2024</p>
-        <div class="paper-links">
-          <a href="https://www.researchgate.net/publication/384436416_Zero-shot_autonomous_robot_manipulation_via_natural_language" target="_blank">PDF</a>
+        <div class="paper-entry">
+            <div class="paper-image">
+                <img src="images/publications/zero_shot_robot.png" alt="Zero-shot Robot Manipulation" />
+            </div>
+            <div class="paper-info">
+                <h3>Zero-shot autonomous robot manipulation via natural language</h3>
+                <p class="authors">Changheon Han, Hojun Lee, <strong>Yuseop Sim</strong>, Jiho Lee</p>
+                <p class="journal"><em>Manufacturing Letters</em>, September 2024</p>
+                <div class="paper-links">
+                    <a href="https://www.researchgate.net/publication/384436416_Zero-shot_autonomous_robot_manipulation_via_natural_language"
+                        target="_blank">PDF</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="paper-entry">
-      <div class="paper-image">
-        <img src="images/publications/exoskeleton_digital_twin.png" alt="Exoskeleton Digital Twin" />
-      </div>
-      <div class="paper-info">
-        <h3>Integration of an exoskeleton robotic system into a digital twin for industrial manufacturing applications</h3>
-        <p class="authors">Hoonmin Park, Minchul Shin, Gyubok Choi, <strong>Yuseop Sim</strong>, Jiho Lee, Huitaek Yun, Martin Byung Guk Jun, Gyuman Kim, Younghun Jeong, Hak Yi</p>
-        <p class="journal"><em>Kyungpook National University</em></p>
-        <div class="paper-links">
-          <a href="https://research.knu.ac.kr/en/publications/integration-of-an-exoskeleton-robotic-system-into-a-digital-twin-/fingerprints/" target="_blank">PDF</a>
+        <div class="paper-entry">
+            <div class="paper-image">
+                <img src="images/publications/exoskeleton_digital_twin.png" alt="Exoskeleton Digital Twin" />
+            </div>
+            <div class="paper-info">
+                <h3>Integration of an exoskeleton robotic system into a digital twin for industrial manufacturing
+                    applications</h3>
+                <p class="authors">Hoonmin Park, Minchul Shin, Gyubok Choi, <strong>Yuseop Sim</strong>, Jiho Lee,
+                    Huitaek Yun, Martin Byung Guk Jun, Gyuman Kim, Younghun Jeong, Hak Yi</p>
+                <p class="journal"><em>Kyungpook National University</em></p>
+                <div class="paper-links">
+                    <a href="https://research.knu.ac.kr/en/publications/integration-of-an-exoskeleton-robotic-system-into-a-digital-twin-/fingerprints/"
+                        target="_blank">PDF</a>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- additional -->
+
     </div>
-
-    <!-- additional -->
-
-  </div>
 </body>
+
 </html>
